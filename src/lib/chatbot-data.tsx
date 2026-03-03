@@ -13,12 +13,12 @@ export const faqData = {
     {
       id: 2,
       question: "When is this program?",
-      answer: "Blooming Roses 25 takes place from April 24-27, 2025. The event begins at 5:00 PM on April 24th."
+      answer: "Blooming Roses 26 takes place from April 26-30, 2026. The event begins at 5:00 PM on April 26th."
     },
     {
       id: 3,
       question: "Where is this program held?",
-      answer: "The event is held at Tabore Ashram Kodumpidi, Pala, Kottayam, Kerala, India. You can find directions in the 'About' section of our website."
+      answer: "The event is held at Chavara Public School, Pala, Kottayam, Kerala, India. You can find directions in the 'About' section of our website."
     },
     {
       id: 4,
@@ -101,7 +101,7 @@ export const faqData = {
     {
       id: 2,
       question: "ഈ പ്രോഗ്രാം എപ്പോഴാണ്?",
-      answer: "ബ്ലൂമിംഗ് റോസസ് 25 2025 ഏപ്രിൽ 24-27 വരെ നടക്കുന്നു. ഏപ്രിൽ 24-ന് വൈകുന്നേരം 5:00 മണിക്ക് ഇവന്റ് ആരംഭിക്കുന്നു."
+      answer: "ബ്ലൂമിംഗ് റോസസ് 26 2026 ഏപ്രിൽ 26-30 വരെ നടക്കുന്നു. ഏപ്രിൽ 26-ന് വൈകുന്നേരം 5:00 മണിക്ക് ഇവന്റ് ആരംഭിക്കുന്നു."
     },
     {
       id: 3,
