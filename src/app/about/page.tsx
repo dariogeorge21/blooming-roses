@@ -55,7 +55,7 @@ export default function AboutPage() {
               </div>
               {/* <h2 className="text-2xl font-bold tracking-tight">
                 <span className="bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
-                  Blooming Roses 25
+                  Blooming Roses 26
                 </span>
               </h2> */}
               <p className="text-xl text-blue-800 animate-slide-up font-medium">
@@ -425,7 +425,7 @@ export default function AboutPage() {
                 </div>
 
                 <Link
-                  href="https://bit.ly/blooming25Registration"
+                  href="https://tally.so/r/gDMyEd"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
