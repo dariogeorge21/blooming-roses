@@ -12,7 +12,7 @@ import { PageTransition } from "@/components/page-transition";
 import { FontLoader } from "@/components/font-loader";
 
 export const metadata: Metadata = {
-  title: "Blooming Roses | Jesus Youth Pala",
+  title: "Blooming Roses 26 | Jesus Youth Pala",
   description: "Join us for Blooming Roses, a spiritual event organized by Jesus Youth Pala from April 24-27.",
 };
 
