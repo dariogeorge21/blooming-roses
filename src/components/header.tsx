@@ -42,7 +42,7 @@ export function Header() {
                 Gallery
               </Link>
               <Link
-                href="https://bit.ly/blooming25Registration"
+                href="https://tally.so/r/gDMyEd"
                 className="rounded-md bg-blue-800 px-4 py-2 text-white transition-colors hover:bg-blue-700"
                 target="_blank"
                 rel="noopener noreferrer"
