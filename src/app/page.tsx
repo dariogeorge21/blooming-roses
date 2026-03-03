@@ -42,7 +42,7 @@ export default function Home() {
                 />
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-blue-800">
-                {getTranslation('home', 'title', language)} <span className="text-pink-600">2K25</span>
+                {getTranslation('home', 'title', language)} <span className="text-pink-600">2K26</span>
               </h1>
               <p className="mx-auto max-w-[700px] text-lg text-gray-600 md:text-xl">
                 {getTranslation('home', 'subtitle', language)}  <br />
@@ -67,7 +67,7 @@ export default function Home() {
             {/* Enhanced CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
-                href="https://bit.ly/blooming25Registration"
+                href="https://tally.so/r/gDMyEd"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-blue-800 px-8 text-base font-medium text-white shadow-lg transition-transform hover:bg-blue-700 hover:scale-105"
             target="_blank"
             rel="noopener noreferrer"
