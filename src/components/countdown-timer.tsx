@@ -114,7 +114,7 @@ export function CountdownTimer() {
     // For testing purposes, use a closer date in test mode
     const eventDate = testMode
       ? new Date(Date.now() + 25000) // 25 seconds from now for testing
-      : new Date('2025-04-24T17:30:00') // Actual event date
+      : new Date('2026-04-26T16:00:00') // Actual event date
 
     const timer = setInterval(() => {
       const now = new Date()
@@ -191,7 +191,7 @@ export function CountdownTimer() {
   }, [testMode])
 
   useEffect(() => {
-    const eventDate = new Date('2025-04-24T17:30:00')
+    const eventDate = new Date('2026-04-26T16:00:00')
     const now = new Date()
     
     if (now.getTime() > eventDate.getTime()) {
@@ -204,7 +204,7 @@ export function CountdownTimer() {
       <div className="max-w-2xl mx-auto px-4 py-12 text-center">
         <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-8 border border-blue-100">
           <h2 className="text-3xl font-bold text-blue-900 mb-4">
-            Blooming Roses 2K25
+            Blooming Roses 2026
           </h2>
           <div className="h-px bg-blue-100 w-24 mx-auto mb-6"></div>
           <p className="text-gray-700 text-lg mb-4">
@@ -214,7 +214,7 @@ export function CountdownTimer() {
             Thank you for being part of this blessed journey.
           </p>
           <div className="mt-6 text-sm text-gray-500">
-            April 24-27, 2025 • Tabore Kodumpidi, Pala
+            April 26-30, 2026 • Chavara Public School, Pala
           </div>
         </div>
       </div>
