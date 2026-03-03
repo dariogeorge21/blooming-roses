@@ -67,7 +67,7 @@ export default function AboutPage() {
                   {language === 'en' ? 'Hey Teens! 🎉' : 'ഹേയ് ടീൻസ്! 🎉'}
                 </p>
                 <p className="text-gray-700">
-                  {language === 'en' ? 'Get ready for Blooming Roses 25, an exciting and life-changing event just for YOU! Join us from April 24th to April 27th at Tabore Kodumpidi, Pala, for four days filled with fellowship and faith!' : 'ബ്ലൂമിംഗ് റോസസ് 25-ന് തയ്യാറാകൂ, നിങ്ങൾക്കായി മാത്രമുള്ള ഒരു രസകരവും ജീവിതം മാറ്റുന്നതുമായ ഇവന്റ്! ഏപ്രിൽ 24 മുതൽ 27 വരെ താബോർ കൊടുമ്പിടി, പാലായിൽ കൂട്ടായ്മയും വിശ്വാസവും നിറഞ്ഞ നാല് ദിവസങ്ങളിലേക്ക് ഞങ്ങളോടൊപ്പം ചേരുക!'}
+                  {language === 'en' ? 'Get ready for Blooming Roses 25, an exciting and life-changing event just for YOU! Join us from April 26th to April 30th at Chavara Public School, Pala, for five days filled with fellowship and faith!' : 'ബ്ലൂമിംഗ് റോസസ് 26-ന് തയ്യാറാകൂ, നിങ്ങൾക്കായി മാത്രമുള്ള ഒരു രസകരവും ജീവിതം മാറ്റുന്നതുമായ ഇവന്റ്! ഏപ്രിൽ 26 മുതൽ 30 വരെ ചവര പബ്ലിക് സ്കൂളിൽ, പാലായിൽ കൂട്ടായ്മയും വിശ്വാസവും നിറഞ്ഞ നാല് ദിവസങ്ങളിലേക്ക് ഞങ്ങളോടൊപ്പം ചേരുക!'}
                 </p>
               </div>
             </div>
@@ -376,14 +376,14 @@ export default function AboutPage() {
 
               <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.8526270281227!2d76.71707817535686!3d9.778534990315858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07cf43958d55e7%3A0x346bb31ca4cddecc!2sTabore%20Prarthanalayam%20Pala!5e0!3m2!1sen!2sin!4v1744683518243!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.5878417942345!2d76.68890847535616!3d9.716173490375263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d0e948fe23fb%3A0x4d561f94a3ec7dc4!2sChavara%20CMI%20Public%20School%20Pala!5e0!3m2!1sen!2sin!4v1772556834795!5m2!1sen!2sin"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Tabore Kodumpidi, Pala, Kottayam, Kerala Map"
+                  title="Chavara CMI Public School Pala, Kottayam, Kerala Map"
                   className="w-full"
                 ></iframe>
               </div>
