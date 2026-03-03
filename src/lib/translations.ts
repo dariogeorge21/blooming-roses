@@ -1,4 +1,4 @@
-import { Language } from '@/contexts/LanguageContext';
+import { Language } from "../hooks/contexts/LanguageContext";
 
 // Type for translation entries
 type TranslationEntry = {
@@ -59,8 +59,8 @@ export const translations: TranslationCategories = {
       ml: 'ജീസസ് യൂത്ത് പാലാ സംഘടിപ്പിക്കുന്ന കൗമാരക്കാർക്കായുള്ള ആത്മീയ യാത്ര',
     },
     eventDate: {
-      en: 'April 24–27, 2025 • Tabore Kodumpidi, Pala',
-      ml: 'ഏപ്രിൽ 24–27, 2025 • താബോർ കൊടുമ്പിടി, പാലാ',
+      en: 'April 26–30, 2026 • Chavara Public School, Pala',
+      ml: 'ഏപ്രിൽ 26–30, 2026 • ചവര പബ്ലിക് സ്കൂള്, പാലാ',
     },
     quote: {
       en: 'Rejoice in hope',
@@ -149,16 +149,16 @@ export const translations: TranslationCategories = {
       ml: 'സ്ഥലം:',
     },
     locationValue: {
-      en: 'Tabore Kodumpidi, Pala',
-      ml: 'താബോർ കൊടുമ്പിടി, പാലാ',
+      en: 'Chavara Public School, Pala',
+      ml: 'ചവര പബ്ലിക് സ്കൂള്, പാലാ',
     },
     dates: {
       en: 'Dates:',
       ml: 'തീയതികൾ:',
     },
     datesValue: {
-      en: 'April 24-27, 2025',
-      ml: 'ഏപ്രിൽ 24-27, 2025',
+      en: 'April 26-30, 2026',
+      ml: 'ഏപ്രിൽ 26-30, 2026',
     },
     registrationFee: {
       en: 'Registration Fee:',
@@ -237,8 +237,8 @@ export const translations: TranslationCategories = {
   },
   footer: {
     copyright: {
-      en: '© 2025 Blooming Roses. All rights reserved.',
-      ml: '© 2025 ബ്ലൂമിംഗ് റോസസ്. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം.',
+      en: '© 2026 Blooming Roses. All rights reserved.',
+      ml: '© 2026 ബ്ലൂമിംഗ് റോസസ്. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം.',
     },
     organizedBy: {
       en: 'Organized by Jesus Youth Pala.',

@@ -1,6 +1,6 @@
 'use client';
 
-import { Language } from '@/contexts/LanguageContext';
+import { Language } from "../hooks/contexts/LanguageContext";
 
 // Define the translations for different categories
 const translations = {
@@ -44,8 +44,8 @@ const translations = {
       ml: 'ജീസസ് യൂത്ത് പാലാ സംഘടിപ്പിക്കുന്ന കൗമാരക്കാർക്കായുള്ള ആത്മീയ യാത്ര',
     },
     eventDate: {
-      en: 'April 24–27, 2025 • Tabore Kodumpidi, Pala',
-      ml: 'ഏപ്രിൽ 24–27, 2025 • താബോർ കൊടുമ്പിടി, പാലാ',
+      en: 'April 26–30, 2026 • Chavara Public School, Pala',
+      ml: 'ഏപ്രിൽ 26–30, 2026 • ചവര പബ്ലിക് സ്കൂള്, പാലാ',
     },
     quote: {
       en: 'Rejoice in hope',
@@ -132,16 +132,16 @@ const translations = {
       ml: 'സ്ഥലം:',
     },
     locationValue: {
-      en: 'Tabore Kodumpidi, Pala',
-      ml: 'താബോർ കൊടുമ്പിടി, പാലാ',
+      en: 'Chavara Public School, Pala',
+      ml: 'ചവര പബ്ലിക് സ്കൂള്, പാലാ',
     },
     dates: {
       en: 'Dates:',
       ml: 'തീയതികൾ:',
     },
     datesValue: {
-      en: 'April 24-27, 2025',
-      ml: 'ഏപ്രിൽ 24-27, 2025',
+      en: 'April 26-30, 2026',
+      ml: 'ഏപ്രിൽ 26-30, 2026',
     },
     registrationFee: {
       en: 'Registration Fee:',
@@ -219,8 +219,8 @@ export function getTranslation(
   language: Language
 ): string {
   try {
-    // ts-expect-error - We're using dynamic access here
-    const translation = translations[category][key][language];
+    const categoryData = translations[category] as Record<string, Record<Language, string>>;
+    const translation = categoryData[key]?.[language];
     return translation || `Missing translation: ${category}.${key}.${language}`;
   } catch {
     console.error(`Translation not found for ${category}.${key}.${language}`);
