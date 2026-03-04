@@ -84,7 +84,7 @@ export const faqData = {
     {
       id: 6,
       question: "How do I register?",
-      answer: "You can register by scanning the QR code on our website or by visiting this link: https://bit.ly/blooming25Registration"
+      answer: "You can register by scanning the QR code on our website or by visiting this link: https://tally.so/r/gDMyEd"
     },
     {
       id: 7,
@@ -172,7 +172,7 @@ export const faqData = {
     {
       id: 6,
       question: "ഞാൻ എങ്ങനെ രജിസ്റ്റർ ചെയ്യും?",
-      answer: "ഞങ്ങളുടെ വെബ്സൈറ്റിലെ QR കോഡ് സ്കാൻ ചെയ്തോ ഈ ലിങ്ക് സന്ദർശിച്ചോ നിങ്ങൾക്ക് രജിസ്റ്റർ ചെയ്യാം: https://bit.ly/blooming25Registration"
+      answer: "ഞങ്ങളുടെ വെബ്സൈറ്റിലെ QR കോഡ് സ്കാൻ ചെയ്തോ ഈ ലിങ്ക് സന്ദർശിച്ചോ നിങ്ങൾക്ക് രജിസ്റ്റർ ചെയ്യാം: https://tally.so/r/gDMyEd"
     },
     {
       id: 7,
