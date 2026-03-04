@@ -30,7 +30,7 @@ export function CountdownTimer() {
   const [showZoomWiggle, setShowZoomWiggle] = useState<boolean>(false)
   const [showFlip, setShowFlip] = useState<boolean>(false)
   const [showConfetti, setShowConfetti] = useState<boolean>(false)
-  const [windowSize, setWindowSize] = useState<{width: number, height: number}>({ width: 0, height: 0 })
+  const [windowSize, setWindowSize] = useState<{ width: number, height: number }>({ width: 0, height: 0 })
   const [isEventEnded, setIsEventEnded] = useState(false)
 
   // Ref to track if the countdown has completed
@@ -193,7 +193,7 @@ export function CountdownTimer() {
   useEffect(() => {
     const eventDate = new Date('2026-04-26T16:00:00')
     const now = new Date()
-    
+
     if (now.getTime() > eventDate.getTime()) {
       setIsEventEnded(true)
     }
@@ -257,21 +257,21 @@ export function CountdownTimer() {
             <h2 className="text-xl font-bold text-blue-800 mb-4">Your Spiritual Journey Begins In:</h2>
 
             <div className="flex flex-wrap justify-center gap-4 transition-all duration-300">
-              <div className="flex flex-col items-center rounded-lg bg-white/80 backdrop-blur-sm p-4 shadow-md border border-blue-100 w-20">
-                <span className="text-3xl font-bold text-blue-900">{timeLeft.days}</span>
-                <span className="text-sm text-blue-700">Days</span>
+              <div className="flex flex-col items-center rounded-[1.5rem] bg-white/60 backdrop-blur-md p-5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/60 w-24">
+                <span className="text-3xl font-extrabold text-blue-900">{timeLeft.days}</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-blue-600/80 mt-1">Days</span>
               </div>
-              <div className="flex flex-col items-center rounded-lg bg-white/80 backdrop-blur-sm p-4 shadow-md border border-blue-100 w-20">
-                <span className="text-3xl font-bold text-blue-900">{timeLeft.hours}</span>
-                <span className="text-sm text-blue-700">Hours</span>
+              <div className="flex flex-col items-center rounded-[1.5rem] bg-white/60 backdrop-blur-md p-5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/60 w-24">
+                <span className="text-3xl font-extrabold text-blue-900">{timeLeft.hours}</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-blue-600/80 mt-1">Hours</span>
               </div>
-              <div className="flex flex-col items-center rounded-lg bg-white/80 backdrop-blur-sm p-4 shadow-md border border-blue-100 w-20">
-                <span className="text-3xl font-bold text-blue-900">{timeLeft.minutes}</span>
-                <span className="text-sm text-blue-700">Minutes</span>
+              <div className="flex flex-col items-center rounded-[1.5rem] bg-white/60 backdrop-blur-md p-5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/60 w-24">
+                <span className="text-3xl font-extrabold text-blue-900">{timeLeft.minutes}</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-blue-600/80 mt-1">Mins</span>
               </div>
-              <div className="flex flex-col items-center rounded-lg bg-white/80 backdrop-blur-sm p-4 shadow-md border border-blue-100 w-20">
-                <span className="text-3xl font-bold text-blue-900">{timeLeft.seconds}</span>
-                <span className="text-sm text-blue-700">Seconds</span>
+              <div className="flex flex-col items-center rounded-[1.5rem] bg-white/60 backdrop-blur-md p-5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/60 w-24">
+                <span className="text-3xl font-extrabold text-blue-900">{timeLeft.seconds}</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-blue-600/80 mt-1">Secs</span>
               </div>
             </div>
 
@@ -321,7 +321,7 @@ export function CountdownTimer() {
                 <p className="text-blue-100 text-lg italic">
                   <span className="inline-block animate-bounce" style={{ animationDuration: '1.5s' }}>Welcome</span> dear
                   <span className="inline-block animate-bounce" style={{ animationDuration: '1.5s', animationDelay: '0.2s' }}></span>
-                   <span className="font-bold text-yellow-200"> Children of God</span> !!
+                  <span className="font-bold text-yellow-200"> Children of God</span> !!
                 </p>
               </div>
 
