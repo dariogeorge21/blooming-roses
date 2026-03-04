@@ -33,14 +33,16 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="relative">
-      {/* Background decorations */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-pink-50 z-[-1]" />
-      <div className="absolute top-40 right-20 w-72 h-72 bg-pink-100 rounded-full blur-3xl opacity-30 z-[-1]" />
-      <div className="absolute bottom-40 left-20 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-30 z-[-1]" />
+    <div className="relative bg-[#fafcff] min-h-screen overflow-hidden">
+      {/* Modern Premium Background Orbs & Grid */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-[-5%] left-[-10%] w-[40vw] h-[40vw] bg-blue-400/20 rounded-full blur-[100px]" />
+        <div className="absolute top-[30%] right-[-10%] w-[35vw] h-[35vw] bg-pink-400/20 rounded-full blur-[100px]" />
+        <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-5" />
+      </div>
 
-      <Container>
-        <div className="py-16 md:py-20">
+      <Container className="relative z-10">
+        <div className="py-20 md:py-28">
           <div className="mx-auto max-w-4xl space-y-12">
             {/* Main Hero Section */}
             <div className="text-center space-y-4 animate-fade-in">
@@ -62,11 +64,11 @@ export default function AboutPage() {
                 {getTranslation('home', 'eventDate', language)}
               </p>
 
-              <div className="mt-8 mx-auto max-w-2xl rounded-2xl border border-pink-100 bg-white p-6 shadow-lg">
-                <p className="text-lg font-medium mb-4">
+              <div className="mt-10 mx-auto max-w-2xl rounded-[2rem] bg-white/80 backdrop-blur-md border border-white/60 p-10 shadow-[0_8px_30px_rgb(0,0,0,0.06)]">
+                <p className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-pink-600 mb-6">
                   {language === 'en' ? 'Hey Teens! 🎉' : 'ഹേയ് ടീൻസ്! 🎉'}
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-700 leading-relaxed font-medium">
                   {language === 'en' ? 'Get ready for Blooming Roses 25, an exciting and life-changing event just for YOU! Join us from April 26th to April 30th at Chavara Public School, Pala, for five days filled with fellowship and faith!' : 'ബ്ലൂമിംഗ് റോസസ് 26-ന് തയ്യാറാകൂ, നിങ്ങൾക്കായി മാത്രമുള്ള ഒരു രസകരവും ജീവിതം മാറ്റുന്നതുമായ ഇവന്റ്! ഏപ്രിൽ 26 മുതൽ 30 വരെ ചവര പബ്ലിക് സ്കൂളിൽ, പാലായിൽ കൂട്ടായ്മയും വിശ്വാസവും നിറഞ്ഞ നാല് ദിവസങ്ങളിലേക്ക് ഞങ്ങളോടൊപ്പം ചേരുക!'}
                 </p>
               </div>
@@ -74,37 +76,49 @@ export default function AboutPage() {
 
             {/* Key Highlights */}
             <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <h2 className="text-2xl font-bold text-center mb-8">
-                <span className="text-blue-800">{getTranslation('home', 'highlightsTitle', language)}</span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 mt-8 tracking-tight">
+                <span className="text-gray-900">{getTranslation('home', 'highlightsTitle', language)}</span>
               </h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 p-6 shadow-sm border border-blue-200">
-                  <p className="text-lg font-medium text-blue-800 mb-2">{getTranslation('home', 'inspiringSessions', language)}</p>
-                  <p className="text-gray-700">{getTranslation('home', 'inspiringSessionsDesc', language)}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="group rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300">
+                  <p className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
+                    <span className="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">✦</span>
+                    {getTranslation('home', 'inspiringSessions', language)}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed font-medium pl-13">{getTranslation('home', 'inspiringSessionsDesc', language)}</p>
                 </div>
 
-                <div className="rounded-xl bg-gradient-to-br from-pink-50 to-pink-100 p-6 shadow-sm border border-pink-200">
-                  <p className="text-lg font-medium text-pink-800 mb-2">{getTranslation('home', 'fellowship', language)}</p>
-                  <p className="text-gray-700">{getTranslation('home', 'fellowshipDesc', language)}</p>
+                <div className="group rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300">
+                  <p className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
+                    <span className="w-10 h-10 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center shrink-0">♥</span>
+                    {getTranslation('home', 'fellowship', language)}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed font-medium pl-13">{getTranslation('home', 'fellowshipDesc', language)}</p>
                 </div>
 
-                <div className="rounded-xl bg-gradient-to-br from-purple-50 to-purple-100 p-6 shadow-sm border border-purple-200">
-                  <p className="text-lg font-medium text-purple-800 mb-2">{getTranslation('home', 'encounter', language)}</p>
-                  <p className="text-gray-700">{getTranslation('home', 'encounterDesc', language)}</p>
+                <div className="group rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300">
+                  <p className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
+                    <span className="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">✧</span>
+                    {getTranslation('home', 'encounter', language)}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed font-medium pl-13">{getTranslation('home', 'encounterDesc', language)}</p>
                 </div>
 
-                <div className="rounded-xl bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 shadow-sm border border-indigo-200">
-                  <p className="text-lg font-medium text-indigo-800 mb-2">{getTranslation('home', 'adoration', language)}</p>
-                  <p className="text-gray-700">{getTranslation('home', 'adorationDesc', language)}</p>
+                <div className="group rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300">
+                  <p className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
+                    <span className="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0">✺</span>
+                    {getTranslation('home', 'adoration', language)}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed font-medium pl-13">{getTranslation('home', 'adorationDesc', language)}</p>
                 </div>
               </div>
             </div>
 
             {/* Event Details */}
-            <div className="space-y-6 animate-slide-up" style={{ animationDelay: "0.4s" }}>
-              <div className="p-8 rounded-2xl bg-white shadow-md border border-gray-100">
-                <h3 className="text-xl font-bold text-blue-800 mb-4 text-center">{getTranslation('about', 'eventDetails', language)}</h3>
+            <div className="space-y-6 animate-slide-up mt-12" style={{ animationDelay: "0.4s" }}>
+              <div className="p-10 rounded-[2.5rem] bg-white shadow-[0_20px_50px_rgb(0,0,0,0.05)] border border-gray-100">
+                <h3 className="text-3xl font-extrabold text-gray-900 mb-8 text-center tracking-tight">{getTranslation('about', 'eventDetails', language)}</h3>
                 <div className="max-w-md mx-auto">
                   <ul className="space-y-4">
                     <li className="flex items-start">
@@ -131,14 +145,15 @@ export default function AboutPage() {
             </div>
 
             {/* Program Outline */}
-            <div className="space-y-6 animate-slide-up" style={{ animationDelay: "0.45s" }}>
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-white to-blue-50 shadow-md border border-blue-100">
-                <h3 className="text-2xl font-bold text-blue-800 mb-6 text-center">{getTranslation('about', 'programOutline', language)}</h3>
-                <p className="text-center text-gray-700 mb-8 max-w-2xl mx-auto">
+            <div className="space-y-6 animate-slide-up mt-16" style={{ animationDelay: "0.45s" }}>
+              <div className="p-8 md:p-12 rounded-[2.5rem] bg-gradient-to-br from-white via-[#f8fafc] to-[#f1f5f9] shadow-[0_20px_50px_rgb(0,0,0,0.05)] border border-gray-100 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-100/50 rounded-full blur-[80px] -z-10" />
+                <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 text-center tracking-tight">{getTranslation('about', 'programOutline', language)}</h3>
+                <p className="text-center text-gray-600 font-medium mb-12 max-w-2xl mx-auto">
                   {getTranslation('about', 'programOutlineDesc', language)}
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {/* Left Column */}
                   <div className="space-y-6">
                     {/* Sessions - God's Love */}
@@ -407,7 +422,7 @@ export default function AboutPage() {
             <div className="text-center space-y-6 animate-slide-up" style={{ animationDelay: "0.7s" }}>
               <h3 className="text-2xl font-bold text-blue-800">{getTranslation('about', 'readyToJoin', language)}</h3>
               <p className="text-lg text-gray-700">
-                {getTranslation('about', 'scanQR', language)}<br/>
+                {getTranslation('about', 'scanQR', language)}<br />
                 {getTranslation('about', 'orUseLink', language)}
               </p>
 
