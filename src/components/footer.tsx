@@ -1,29 +1,41 @@
 'use client';
 
 import Link from "next/link"
-import { useLanguage } from "@/contexts/LanguageContext"
-import { getTranslation } from "@/lib/translations"
 
 export function Footer() {
   return (
-    <footer className="border-t bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
-          <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-            <p className="text-center text-sm leading-loose text-gray-600 md:text-left">
-              © 2026 Blooming Roses. All rights reserved.
-              <br className="hidden sm:inline" />
-              Organized by Jesus Youth Pala. <br /> <a href="https://tally.so/r/gDMyEd" target="_blank" rel="noopener noreferrer">Register Now</a>
+    <footer className="relative border-t border-gray-100 bg-white overflow-hidden">
+      {/* Subtle background decoration */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
+
+      <div className="container mx-auto px-4 md:px-8">
+        <div className="flex flex-col items-center justify-between gap-6 py-12 md:h-32 md:flex-row md:py-0">
+          <div className="flex flex-col items-center gap-2 md:items-start">
+            <div className="flex items-center gap-2">
+              <span className="text-xl font-bold bg-gradient-to-r from-blue-800 to-pink-600 bg-clip-text text-transparent">
+                Blooming Roses
+              </span>
+              <span className="text-sm font-medium text-gray-400">2K26</span>
+            </div>
+            <p className="text-center text-sm text-gray-500 md:text-left font-medium">
+              &copy; {new Date().getFullYear()} Organized by Jesus Youth Pala. All rights reserved.
             </p>
           </div>
           <div className="flex items-center space-x-4">
             <Link
               href="https://tally.so/r/gDMyEd"
-              className="rounded-md bg-blue-800 px-4 py-2 text-white text-sm font-medium transition-colors hover:bg-blue-700"
+              className="group relative inline-flex items-center overflow-hidden rounded-full bg-blue-50 px-6 py-2.5 text-blue-800 transition-all hover:bg-blue-100 border border-blue-200"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register Now
+              <span className="text-sm font-semibold tracking-wide transition-all group-hover:pr-4">Register Now</span>
+              <svg
+                className="absolute right-3 opacity-0 transition-all group-hover:opacity-100"
+                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
             </Link>
           </div>
         </div>
