@@ -509,7 +509,7 @@ export default function GalleryPage() {
       : (selectedParticipantVideoIndex + 1) % pastParticipantsVideos.length
 
     setSelectedParticipantVideoIndex(newIndex)
-  }, [selectedParticipantVideoIndex, pastParticipantsVideos.length])
+  }, [selectedParticipantVideoIndex])
 
   // Handle keyboard navigation
   useEffect(() => {
@@ -549,44 +549,48 @@ export default function GalleryPage() {
 
   return (
     <div className="relative">
-      {/* Background with soft gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-100 z-[-1]" />
+      {/* Modern Premium Background Orbs & Grid */}
+      <div className="absolute inset-x-0 inset-y-0 z-[-1] pointer-events-none overflow-hidden bg-[#fafcff]">
+        <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-blue-400/20 rounded-full blur-[100px]" />
+        <div className="absolute bottom-[30%] right-[-10%] w-[35vw] h-[35vw] bg-pink-400/20 rounded-full blur-[100px]" />
+        <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-5" />
+      </div>
 
-      <div className="relative py-12 md:py-16">
+      <div className="relative py-20 md:py-28">
         <Container>
           {/* Page Header */}
-          <div className="mb-12 text-center">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4 animate-fade-in">
-              <span className="text-blue-800">{getTranslation('gallery', 'title', language)}</span>
+          <div className="mb-16 text-center">
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 animate-fade-in text-gray-900">
+              {getTranslation('gallery', 'title', language)}
             </h1>
-            <p className="mx-auto max-w-2xl text-lg text-gray-600 animate-slide-up">
+            <p className="mx-auto max-w-3xl text-lg md:text-xl text-gray-600 font-medium animate-slide-up">
               {getTranslation('gallery', 'subtitle', language)}
             </p>
           </div>
 
-          {/* Tabs */}
-          <div className="mb-8 flex justify-center border-b border-gray-200">
-            <button
-              onClick={() => setActiveTab('photos')}
-              className={`px-6 py-3 text-sm font-medium transition-colors border-b-2 ${
-                activeTab === 'photos'
-                  ? 'border-blue-800 text-blue-800'
-                  : 'border-transparent text-gray-600 hover:text-gray-900 hover:border-gray-300'
-              }`}
-            >
-              {getTranslation('gallery', 'photos', language)}
-            </button>
-            <button
-              onClick={() => setActiveTab('videos')}
-              className={`px-6 py-3 text-sm font-medium transition-colors border-b-2 ${
-                activeTab === 'videos'
-                  ? 'border-blue-800 text-blue-800'
-                  : 'border-transparent text-gray-600 hover:text-gray-900 hover:border-gray-300'
-              }`}
-              id="videos-tab"
-            >
-              {getTranslation('gallery', 'videos', language)}
-            </button>
+          {/* Premium Floating Tabs */}
+          <div className="mb-12 flex justify-center">
+            <div className="inline-flex items-center p-1.5 bg-white/60 backdrop-blur-md rounded-full border border-gray-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)]">
+              <button
+                onClick={() => setActiveTab('photos')}
+                className={`px-8 py-3 text-sm font-bold rounded-full transition-all duration-300 ${activeTab === 'photos'
+                  ? 'bg-gradient-to-r from-blue-700 to-indigo-600 text-white shadow-md'
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100/50'
+                  }`}
+              >
+                {getTranslation('gallery', 'photos', language)}
+              </button>
+              <button
+                onClick={() => setActiveTab('videos')}
+                className={`px-8 py-3 text-sm font-bold rounded-full transition-all duration-300 ${activeTab === 'videos'
+                  ? 'bg-gradient-to-r from-blue-700 to-indigo-600 text-white shadow-md'
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100/50'
+                  }`}
+                id="videos-tab"
+              >
+                {getTranslation('gallery', 'videos', language)}
+              </button>
+            </div>
           </div>
 
           {/* Our Past Participants section */}
@@ -602,7 +606,7 @@ export default function GalleryPage() {
                 {pastParticipantsVideos.map((video, index) => (
                   <div
                     key={video.id}
-                    className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer animate-fade-in"
+                    className="group overflow-hidden rounded-[2rem] border border-gray-100 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 cursor-pointer animate-fade-in hover:-translate-y-2"
                     style={{ animationDelay: `${index * 0.1}s` }}
                     onClick={() => openParticipantVideoDialog(index)}
                   >
@@ -661,7 +665,7 @@ export default function GalleryPage() {
               {imageGalleryItems.map((item, index) => (
                 <div
                   key={item.id}
-                  className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer animate-fade-in"
+                  className="group overflow-hidden rounded-[2rem] border border-gray-100 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 cursor-pointer animate-fade-in hover:-translate-y-2"
                   style={{ animationDelay: `${index * 0.1}s` }}
                   onClick={() => openImageDialog(index)}
                 >
@@ -708,7 +712,7 @@ export default function GalleryPage() {
               {videoGalleryItems.map((item, index) => (
                 <div
                   key={item.id}
-                  className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer animate-fade-in"
+                  className="group overflow-hidden rounded-[2rem] border border-gray-100 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 cursor-pointer animate-fade-in hover:-translate-y-2"
                   style={{ animationDelay: `${index * 0.1}s` }}
                   onClick={() => openVideoDialog(index)}
                 >
