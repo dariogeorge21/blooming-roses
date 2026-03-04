@@ -33,7 +33,7 @@ export function Chatbot() {
       {/* Chat Button */}
       <button
         onClick={toggleChatbot}
-        className="bg-blue-800 hover:bg-blue-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-200"
+        className="bg-gradient-to-br from-blue-700 to-indigo-800 hover:from-blue-600 hover:to-indigo-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(30,58,138,0.3)] hover:shadow-[0_15px_40px_rgba(30,58,138,0.4)] transition-all duration-300 hover:scale-110 active:scale-95 border border-blue-400/20"
         aria-label="Toggle chat"
       >
         {isOpen ? (
@@ -49,10 +49,10 @@ export function Chatbot() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="absolute bottom-16 right-0 w-80 md:w-96 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden transition-all duration-300 animate-fade-in">
-          <div className="bg-blue-800 text-white p-4">
-            <h3 className="font-bold text-lg">{uiText.title}</h3>
-            <p className="text-sm text-blue-100">{uiText.subtitle}</p>
+        <div className="absolute bottom-20 right-0 w-[calc(100vw-2rem)] sm:w-80 md:w-96 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 overflow-hidden transition-all duration-300 animate-fade-in origin-bottom-right">
+          <div className="bg-gradient-to-r from-blue-800 to-indigo-700 text-white p-5 border-b border-blue-600/30">
+            <h3 className="font-exrabold text-lg tracking-tight">{uiText.title}</h3>
+            <p className="text-sm text-blue-100/80 font-medium">{uiText.subtitle}</p>
           </div>
 
           <div className="h-96 overflow-y-auto p-4">
