@@ -404,7 +404,7 @@ export default function AboutPage() {
               </div>
               <div className="mt-4 flex justify-center">
                 <a
-                  href="https://maps.app.goo.gl/vetjoStbSfGKiTEm9"
+                  href="https://maps.app.goo.gl/ytvvNo5axF9xdpuL6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center bg-blue-800 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
