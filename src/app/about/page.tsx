@@ -314,7 +314,7 @@ export default function AboutPage() {
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Fr Roshan's Contact Card */}
+                {/* Fr Albin's Contact Card */}
                 <div className="flex flex-col items-center rounded-xl bg-white p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 bg-purple-100 border-2 border-purple-200">
                     <Image
@@ -324,7 +324,7 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">Fr Roshan Ennackappallil</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">Fr Albin ...</h3>
                   <p className="text-sm text-gray-600 mb-2">Director of Jesus Youth Pala</p>
                   <a
                     href="tel:+919446812266"
@@ -337,17 +337,17 @@ export default function AboutPage() {
                   </a>
                 </div>
 
-                {/* Neyamol's Contact Card */}
+                {/* Thankam's Contact Card */}
                 <div className="flex flex-col items-center rounded-xl bg-white p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 bg-pink-100 border-2 border-pink-200">
                     <Image
-                      src="/images/about/neyamol.jpg"
-                      alt="Neyamol - Event Coordinator"
+                      src="/images/about/thankam.jpeg"
+                      alt="Thankam - Event Coordinator"
                       fill
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">Neyamol</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">Thankam</h3>
                   <a
                     href="tel:+918590815612"
                     className="flex items-center justify-center px-4 py-2 bg-pink-50 hover:bg-pink-100 rounded-full text-pink-800 transition-colors"
@@ -355,21 +355,21 @@ export default function AboutPage() {
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5 mr-2">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    85908 15612
+                    91886 65895
                   </a>
                 </div>
 
-                {/* Anto's Contact Card */}
+                {/* Tom's Contact Card */}
                 <div className="flex flex-col items-center rounded-xl bg-white p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 bg-blue-100 border-2 border-blue-200">
                     <Image
-                      src="/images/about/anto.jpg"
-                      alt="Anto - Event Coordinator"
+                      src="/images/about/tom.jpeg"
+                      alt="Tom - Event Coordinator"
                       fill
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">Anto</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">Tom</h3>
                   <a
                     href="tel:+916282586348"
                     className="flex items-center justify-center px-4 py-2 bg-blue-50 hover:bg-blue-100 rounded-full text-blue-800 transition-colors"
@@ -377,7 +377,7 @@ export default function AboutPage() {
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5 mr-2">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    62825 86348
+                     95442 66677
                   </a>
                 </div>
               </div>
